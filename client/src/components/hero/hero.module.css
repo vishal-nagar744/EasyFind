@@ -1,0 +1,136 @@
+html {
+    font-size: 10px;
+  }
+  .container {
+    height: calc(130vh - 6rem);
+    width: 100%;
+    background-image: url('../../assets/banner.jpg');
+    background-size: cover;
+    background-color: rgba(116, 109, 179, 0.4);
+    background-blend-mode: darken;
+  }
+  
+  .wrapper {
+    max-width: 1180px;
+    margin: 0 auto;
+    height: 110%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h2 {
+    font-size: 6.5rem;
+    font-weight: bold;
+    color: #f8f5f5;
+    white-space: nowrap;
+    margin-bottom: 2.5rem;
+  }
+  
+  h5 {
+    color: #efefef;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .options {
+    width: 80%;
+    background-color: #f7f4fa;
+    padding: 1.25rem 2.5rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 8px 15px 0 rgb(248, 248, 250);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border: 1px solid rgba(0, 0, 0, 0.18);
+  }
+  
+  .options > h3 {
+    font-size: 1.8rem;
+    margin-right: 1rem;
+  }
+  
+  .select {
+    height: 40px;
+    min-width: 120px;
+    max-width: 130px;
+    border: none;
+    outline: none;
+    padding: 0.25rem 0.75rem;
+    background-color: blue;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  
+  .searchIcon {
+    padding: 0.6rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgb(7, 3, 73) 0%, rgb(14, 14, 132) 35%, rgb(32, 97, 219) 100%);
+    fill: #fff;
+    cursor: pointer;
+  }
+  
+  /* RESPONSIVE */
+  @media only screen and (max-width: 768px) {
+    h2 {
+      font-size: 3rem;
+    }
+  
+    h5 {
+      font-size: 1.3rem;
+    }
+  
+    .options {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+  
+    .options > h3 {
+      margin-bottom: 0.5rem;
+    }
+  
+    .select {
+      min-width: 120px;
+      max-width: 160px;
+      margin-right: 1rem;
+    }
+  
+    .searchIcon {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    h2 {
+      font-size: 2.5rem;
+    }
+  
+    h5 {
+      font-size: 1.1rem;
+    }
+  
+    .options > h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .select {
+      min-width: 100px;
+      max-width: 140px;
+      margin-right: 0.5rem;
+    }
+  
+    .searchIcon {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  

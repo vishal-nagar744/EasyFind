@@ -1,0 +1,211 @@
+.container {
+    height: 100%;
+    width: 100%;
+    margin-top: 2.5rem;
+  }
+  
+  .wrapper {
+    max-width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+  }
+  
+  .titles {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .titles > h5 {
+    color: #777;
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+  
+  .titles > h2 {
+    color: #333;
+    font-size: 1.75rem;
+  }
+  
+  .wrapper > .options {
+    width: 80%;
+    background-color: #f7f4fa;
+    padding: 1.25rem 2.5rem;
+    margin-left: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 8px 32px 0 rgb(2, 35, 251);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border: 1px solid rgba(0, 0, 0, 0.18);
+  }
+  
+  .options > select {
+    height: 3.125rem;
+    min-width: 10rem;
+    max-width: 12.5rem;
+    border: none;
+    outline: none;
+    padding: 0.25rem 0.75rem;
+    background-color: rgb(10, 6, 252);
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+  
+  .options > select:first-child {
+    color: #fff;
+    width: 100px;
+  }
+  
+  .options > .rangeInput {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .options > .searchBtn {
+    outline: none;
+    border: none;
+    width: 3.125rem;
+    height: 3.125rem;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  
+  .options > .searchBtn > .searchIcon {
+    border: 1px solid transparent;
+    border-radius: 50%;
+    padding: 0.6rem;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgb(7, 3, 73) 0%, rgb(14, 14, 132) 35%, rgb(32, 97, 219) 100%);
+    fill: #fff;
+  }
+  
+  .options > .searchBtn:active > .searchIcon {
+    border: 1px solid rgb(7, 3, 73);
+    fill: rgb(7, 3, 73);
+    background: #fff;
+  }
+  
+  .properties {
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+  
+  .noProperty {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 2.25rem;
+    color: #222;
+  }
+  
+  /* RESPONSIVE */
+  
+  @media only screen and (max-width: 62.5rem) {
+    .wrapper > .options {
+      width: 90%;
+      padding: 0.75rem 1rem;
+      margin: 0 auto;
+    }
+  
+    .properties {
+      justify-content: center;
+    }
+  }
+  
+  @media only screen and (max-width: 48rem) {
+    .titles > h2 {
+      font-size: 1.5rem;
+    }
+  
+    .titles > h5 {
+      font-size: 1rem;
+    }
+  }
+  
+  @media only screen and (max-width: 16.875rem) {
+    .container {
+      margin-top: 1.5rem;
+    }
+  
+    .titles > h2 {
+      font-size: 1.25rem;
+    }
+  
+    .titles > h5 {
+      font-size: 0.875rem;
+    }
+  
+    .wrapper > .options {
+      padding: 0.75rem 1rem;
+    }
+  
+    .options > select {
+      min-width: 9rem;
+      max-width: 11rem;
+      font-size: 1rem;
+    }
+  
+    .options > .searchBtn {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  
+    .options > .searchBtn > .searchIcon {
+      padding: 0.5rem;
+    }
+  
+    .noProperty {
+      font-size: 1.75rem;
+      margin-top: 3rem;
+    }
+  }
+  
+  @media only screen and (max-width: 16.875rem) and (max-height: 26.25rem) {
+    .container {
+      margin-top: 1rem;
+    }
+  
+    .titles > h2 {
+      font-size: 1rem;
+    }
+  
+    .titles > h5 {
+      font-size: 0.75rem;
+    }
+  
+    .wrapper > .options {
+      padding: 0.5rem 0.75rem;
+    }
+  
+    .options > select {
+      min-width: 7.5rem;
+      max-width: 9.5rem;
+      font-size: 0.875rem;
+    }
+  
+    .options > .searchBtn {
+      width: 2.25rem;
+      height: 2.25rem;
+    }
+  
+    .options > .searchBtn > .searchIcon {
+      padding: 0.375rem;
+    }
+  
+    .noProperty {
+      font-size: 1.5rem;
+      margin-top: 2.5rem;
+    }
+  }
+  

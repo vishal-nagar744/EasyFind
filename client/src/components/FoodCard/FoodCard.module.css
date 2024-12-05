@@ -1,0 +1,68 @@
+.container {
+    text-decoration: none;
+    color: #222;
+    height: 100%;
+    width: 100%;
+    -webkit-box-shadow: 10px 10px 24px -8px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 10px 10px 24px -8px rgba(0, 0, 0, 0.25);
+    box-shadow: 20px 19px 24px -8px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 0.75rem;
+    cursor: pointer;
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.imgContainer{
+    background-color: #c3c3f59c;
+    display: inline-block;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 12px;
+    /* box-shadow: 10px 10px 10px 10px rgba(64, 66, 241, 0.815); */
+    box-shadow: 0 8px 20px 0  rgba(39, 42, 233, 0.815);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+}
+
+.imgContainer > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.title{
+    margin-top: 0.25rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.priceAndMaxPassengers{
+    margin-top: 0.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #01000a;
+    font-weight: bold;
+    font-size: 12px;
+    
+}
+
+.passengers{
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: #1c03fa;
+    font-size: 12px;
+}
