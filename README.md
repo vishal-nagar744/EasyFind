@@ -6,3 +6,8 @@ EasyFindRoom: ( this is a web app application made only for indore city and this
 
 ---start backend---
 #nodemon www.js
+
+
+MONGO_URL=mongodb://localhost:27017/EasyFindRoom
+JWT_SECRET=secret
+PORT=5000
